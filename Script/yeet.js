@@ -22,6 +22,11 @@ function showFilters() {
     filterForm.classList.toggle("show");
 }
 
+function hideSmileys() {
+    showSmileys();
+    smiley[4].classList.toggle("chosen");
+}
+
 function showSmileys() {
     smiley[0].classList.toggle("show");
     smiley[1].classList.toggle("show");
@@ -175,7 +180,7 @@ if (sPage == "verhaal.html") {
     }, false);
 
 
-
+    smiley[4].addEventListener("click", hideSmileys);
     smileyKnop.addEventListener("click", showSmileys);
 
 }

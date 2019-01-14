@@ -493,12 +493,13 @@ footer img {
     width: 5em;
     height: 5em;
     position: absolute;
-    bottom: -0%;
+    bottom: 0%;
     left: 43%;
     -webkit-transition: all 2s;
     transition: all 2s;
     opacity: 0;
 }
+
 
 footer img.show {
     width: 5em;
@@ -527,6 +528,15 @@ footer img[alt="sad"].show {
 footer img[alt="angry"].show {
     bottom: 10%;
     left: 65%;
+}
+
+footer img[alt="angry"].chosen {
+    left:40%;
+    bottom: 10%;
+    z-index: 3;
+    opacity: 100;
+    -webkit-transform: scale(2.2, 2.2);
+    transform: scale(2.2, 2.2);
 }
 
 footer img:hover {
