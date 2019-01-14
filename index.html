@@ -6,7 +6,6 @@
     <title>99 Verhalen - Home</title>
     <link rel="stylesheet" href="Css/styleYeet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Css/slick.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -15,13 +14,13 @@
 
     <header>
 
-        <h1 class="item">99 Verhalen</h1>
+        <h1>99 Verhalen</h1>
 
-        <a class="item" href="Index.html"><img src="Images/logo-uov-negative.svg" alt="Logo U-OV"></a>
+        <a href="Index.html"><img src="Images/logo-uov-negative.svg" alt="Logo U-OV"></a>
 
 
         <div>
-            <form class="item">
+            <form>
                 <input type="text" name="search" placeholder="Search...">
             </form>
 
@@ -32,26 +31,26 @@
     </header>
     <main>
         <div>
-            <button id="filterBtn" class="item">Filter de verhalen</button>
-            <button id="verrasMe" class="item">Verras me!</button>
+            <button id="filterBtn">Filter de verhalen</button>
+            <a href="verhaal.html"><button id="verrasMe">Verras me!</button></a>
         </div>
-        <section id="filterAll">
-            <form action="filter.php">
+        <section>
+            <form action="filter.php" name="myForm" id="filterAll">
 
                 <fieldset class="home">
                     <legend>Home</legend>
 
-                    <input type="radio" name="home" id="populair">
-                    <label for="populair">Populair</label>
+                    <input type="radio" name="myRadios" id="Populair" checked>
+                    <label for="Populair">Populair</label>
 
-                    <input type="radio" name="home" id="favorieten">
-                    <label for="favorieten">Favorieten</label>
+                    <input type="radio" name="myRadios" id="Favorieten">
+                    <label for="Favorieten">Favorieten</label>
 
-                    <input type="radio" name="home" id="gedownload">
-                    <label for="gedownload">Gedownload</label>
+                    <input type="radio" name="myRadios" id="Gedownload">
+                    <label for="Gedownload">Gedownload</label>
 
-                    <input type="radio" name="home" id="keuzes">
-                    <label for="keuzes">Op basic van jou keuzes</label>
+                    <input type="radio" name="myRadios" id="Keuzes">
+                    <label for="Keuzes">Op basic van jou keuzes</label>
 
 
 
@@ -116,54 +115,126 @@
         </section>
 
         <section class="secondSection">
-            <h2>Alle verhalen</h2>
+            <h2 id="titel">Populair</h2>
             <div>
-                <article class="item">
+                <article>
                     <img src="Images/verhaalKlumpereven.png" alt="Header">
                     <div class="textBox">
-                        <h3>Paranoia</h3>
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
                         <p>69 likes</p>
                         <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
-                        <a class="leesVerder" href="">Lees het hele verhaal</a>
-                        <div>
-                            <a class="icon1"><span id="star" class="far fa-star"></span></a>
-                        </div>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
                     </div>
                 </article>
-                <article class="item">
+                <article>
                     <img src="Images/verhaalWestern.png" alt="Header">
                     <div class="textBox">
-                        <h3>Paranoia</h3>
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
                         <p>69 likes</p>
                         <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
-                        <a class="leesVerder" href="">Lees het hele verhaal</a>
-                        <div>
-                            <a class="icon1"><span id="star" class="far fa-star"></span></a>
-                        </div>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
                     </div>
                 </article>
-                <article class="item">
+                <article>
                     <img src="Images/verhaalKlumpereven.png" alt="Header">
                     <div class="textBox">
-                        <h3>Paranoia</h3>
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
                         <p>69 likes</p>
                         <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
-                        <a class="leesVerder" href="">Lees het hele verhaal</a>
-                        <div>
-                            <a class="icon1"><span id="star" class="far fa-star"></span></a>
-                        </div>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
                     </div>
                 </article>
-                <article class="item">
+                <article>
                     <img src="Images/verhaalWestern.png" alt="Header">
                     <div class="textBox">
-                        <h3>Paranoia</h3>
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
                         <p>69 likes</p>
                         <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
-                        <a class="leesVerder" href="">Lees het hele verhaal</a>
-                        <div>
-                            <a class="icon1"><span id="star" class="far fa-star"></span></a>
-                        </div>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/verhaalKlumpereven.png" alt="Header">
+                    <div class="textBox">
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
+                        <p>69 likes</p>
+                        <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/verhaalWestern.png" alt="Header">
+                    <div class="textBox">
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
+                        <p>69 likes</p>
+                        <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/verhaalKlumpereven.png" alt="Header">
+                    <div class="textBox">
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
+                        <p>69 likes</p>
+                        <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/verhaalWestern.png" alt="Header">
+                    <div class="textBox">
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
+                        <p>69 likes</p>
+                        <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/verhaalKlumpereven.png" alt="Header">
+                    <div class="textBox">
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
+                        <p>69 likes</p>
+                        <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/verhaalWestern.png" alt="Header">
+                    <div class="textBox">
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
+                        <p>69 likes</p>
+                        <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/verhaalKlumpereven.png" alt="Header">
+                    <div class="textBox">
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
+                        <p>69 likes</p>
+                        <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="Images/verhaalWestern.png" alt="Header">
+                    <div class="textBox">
+                        <h3>De presentator die ten onrechte denk aansluiting te hebben gevonden bij 'de kids'</h3>
+                        <p>69 likes</p>
+                        <p class="textVerhaal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum scelerisque egestas. Ut convallis sed ante vel sagittis. Mauris libero diam, elementum id felis sed, iaculis consectetur nibh. Integer quis porta diam, nec eleifend eros. Morbi posuere metus in ligula sodales commodo eu eu turpis. Maecenas molestie accumsan nulla, id sollicitudin diam sagittis vel. In id sapien hendrerit, placerat elit in, ultrices velit. Nulla ac ligula dignissim, congue lorem vitae, porttitor risus. Nunc bibendum pulvinar lacus. Donec vestibulum placerat arcu sit amet hendrerit. Integer laoreet sollicitudin nisi, ut imperdiet sem dapibus quis. Vivamus sagittis tortor mi, et ultricies ipsum interdum non. Vivamus velit lorem, lacinia ac urna vitae, pellentesque vehicula arcu. Vivamus efficitur libero quis auctor pulvinar.</p>
+                        <a class="leesVerder" href="verhaal.html">Lees het hele verhaal</a>
+                        <a class="icon1"><span class="far fa-star"></span></a>
                     </div>
                 </article>
             </div>

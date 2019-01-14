@@ -3,19 +3,197 @@
 /*eslint 'no-console':0*/
 
 //slick slider code
-var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var knop = document.getElementById("filterBtn");
+var filterForm = document.getElementById("filterAll");
+var smileyKnop = document.getElementById("smileyBtn");
 
-if (w<950){
-document.getElementById("filterAll").style.display = "none";
-}
+var smiley = document.querySelectorAll(".smiley");
+
+
+
+//https://stackoverflow.com/questions/8102940/javascript-check-what-page-has-loaded
+var sPath = window.location.pathname;
+var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+
+console.log(sPath);
+
 
 function showFilters() {
-     var x = document.getElementById("filterAll");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
+    filterForm.classList.toggle("show");
+}
+
+function showSmileys() {
+    smiley[0].classList.toggle("show");
+    smiley[1].classList.toggle("show");
+    smiley[2].classList.toggle("show");
+    smiley[3].classList.toggle("show");
+    smiley[4].classList.toggle("show");
+}
+
+
+
+/*!
+ * Determine if an element is in the viewport
+ * (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
+ * @param  {Node}    elem The element
+ * @return {Boolean}      Returns true if element is in the viewport
+ */
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+var p1 = document.getElementById("p1");
+var p2 = document.getElementById("p2");
+var p3 = document.getElementById("p3");
+var p4 = document.getElementById("p4");
+var p5 = document.getElementById("p5");
+var p6 = document.getElementById("p6");
+var p7 = document.getElementById("p7");
+var p8 = document.getElementById("p8");
+var p9 = document.getElementById("p9");
+var p10 = document.getElementById("p10");
+var p11 = document.getElementById("p11");
+var p12 = document.getElementById("p12");
+var p13 = document.getElementById("p13");
+
+console.log(p1);
+if (sPage == "verhaal.html") {
+    window.addEventListener('scroll', function (event) {
+        if (isElementInViewport(p1)) {
+            if (p1.classList == "showP") {
+
+            } else {
+                p1.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+
+        if (isElementInViewport(p2)) {
+            if (p2.classList == "showP") {
+
+            } else {
+                p2.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+
+        if (isElementInViewport(p3)) {
+            if (p3.classList == "showP") {
+
+            } else {
+                p3.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+
+        if (isElementInViewport(p4)) {
+            if (p4.classList == "showP") {
+
+            } else {
+                p4.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p5)) {
+            if (p5.classList == "showP") {
+
+            } else {
+                p5.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p6)) {
+            if (p6.classList == "showP") {
+
+            } else {
+                p6.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p7)) {
+            if (p7.classList == "showP") {
+
+            } else {
+                p7.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p8)) {
+            if (p8.classList == "showP") {
+
+            } else {
+                p8.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p9)) {
+            if (p9.classList == "showP") {
+
+            } else {
+                p9.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p10)) {
+            if (p10.classList == "showP") {
+
+            } else {
+                p10.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p11)) {
+            if (p11.classList == "showP") {
+
+            } else {
+                p11.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p12)) {
+            if (p12.classList == "showP") {
+
+            } else {
+                p12.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+        if (isElementInViewport(p13)) {
+            if (p13.classList == "showP") {
+
+            } else {
+                p13.classList.toggle("showP");
+                console.log(p1.classList);
+            }
+        }
+    }, false);
+
+
+
+    smileyKnop.addEventListener("click", showSmileys);
+
+}
+
+if (sPage == "index.html") {
+    var rad = document.myForm.myRadios;
+    var prev = null;
+    for (var i = 0; i < rad.length; i++) {
+        rad[i].addEventListener('change', function () {
+            (prev) ? console.log(prev.value): null;
+            if (this !== prev) {
+                prev = this;
+            }
+            console.log(this.value);
+            document.getElementById("titel").innerHTML = this.id;
+            console.log(document.getElementById("titel").innerHTML);
+        });
     }
-    }
-document.getElementById("filterBtn").addEventListener("click", showFilters);
-             
+
+    knop.addEventListener("click", showFilters);
+}

@@ -1,205 +1,126 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6vh;
-    background-color: #675c53;
-    border-bottom: 1px solid #afa9a2;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    z-index: 100;
+  /*      login:     */
+    .loginForm {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        width: 100vw;
+    }
+
+    .loginForm h2:first-child {
+        display: block;
+        width: 50vw;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .loginForm div {
+        width: 70vw;
+        box-shadow: 8px 8px 18px 8px rgba(103, 92, 83, .3);
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    .loginForm article {
+        width: inherit;
+        border-radius: 1em;
+        padding: 1em;
+        background: white;
+    }
+
+    .loginForm article:last-of-type {
+        background-color: #f7f4f1;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border-top-left-radius: 0em;
+        border-top-right-radius: 0em;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    .loginForm form {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .loginForm article input[type="submit"] {
+        width: 15em;
+        text-align: center;
+        padding: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border: 1px solid orange;
+        border-radius: 0.5em;
+    }
+
+.loginForm article input[type="submit"]:last-child {
+    margin: auto;
 }
 
-header div {
-    display: flex;
-}
+    .loginForm input {
+        border: none;
+        background-size: 1rem;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 10px 20px 10px 40px;
+    }
 
-header a img {
-    max-width: 5em;
-    max-height: 2em;
-    display: block;
-}
+    .loginForm input {
+        width: 90%;
+        box-sizing: border-box;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid orange;
+        border-radius: 4px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-size: 0.8rem;
+        background: transparent;
+        background-size: 1rem;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 10px 20px 10px 40px;
+        -webkit-transition: width 0.5s;
+        /* Safari */
+        transition: width 0.5s;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
 
-header a span {
-    font-size: 1.8rem;
-    display: inline;
-}
+    .loginForm article form input[type="email"] {
+        background-image: url("..//Images/at-solid.svg");
+    }
 
-h1 {
-    text-align: center;
-    font-size: 1.2em;
-    flex-grow: <0>;
-    color: White;
-    align-self: center;
-}
+    .loginForm article form input[type="password"] {
+        background-image: url("..//Images/lock-solid.svg");
+    }
 
-header form {
-    padding: 5px;
-}
+    .loginForm input:focus {
+        color: dimgrey;
+        border-bottom: 3px solid orange;
+    }
 
-header form input {
-    width: 8em;
-    max-width: 12em;
-    box-sizing: border-box;
-    border: 0;
-    outline: 0;
-    border: 0.5px solid white;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    background: transparent;
-    background-image: url('..//Images/search-solid.svg');
-    background-size: 1rem;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 10px 20px 10px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    margin-right: 1em;
-}
-
-header form input:focus {
-    width: 100vw;
-    color: white;
-    text-decoration: underline
-}
-
-.personal {
-
-    margin-right: 2vw;
-    text-decoration: none;
-    color: white;
-}
-
-.personal span {
-    font-size: 2em;
-}
-
-.item {
-    align-self: center;
-}
-
-
-/*Login form*/
-.loginForm {
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    margin-top: 8vw;
+    .loginForm input:valid {
+        color: dimgrey;
+        border-bottom: 3px solid lightgreen;
+    }
     
-}
-.boxShadow{
-        box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
-}
-.loginForm div:first-child{
-    display: flex;
-    flex-flow: column;
-    margin: auto;
-}
-
-.loginForm article:first-of-type {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    text-align: center;
-    width: 70vw;
-    padding: 2em;
-    border-radius: 1em 1em 0em 1em;
-    background: white;
-}
-
-.loginForm article:last-of-type {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    text-align: center;
-    width: 70vw;
-    padding: 2em;
-    border-radius: 0em 0em 1em 1em;
-    background-color: #f7f4f1;
-}
-
-.emailInput {
-    position: relative;
-}
-
-.passwordInput {
-    position: relative;
-}
-
-.loginForm label {
-    display: block;
-    font-size: 0.8em;
-    padding-left: 1.2em;
-}
-
-.loginForm input {
-    display: block;
-    font-size: 1em;
-    padding-left: 1.4em;
-    border: none;
-
-}
-
-.loginForm input {
-    width: 8em;
-    max-width: 20em;
-    box-sizing: border-box;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid orange;
-    border-radius: 4px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    font-size: 0.8rem;
-    background: transparent;
-    background-size: 1rem;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 10px 20px 10px 40px;
-    -webkit-transition: width 2s;
-    /* Safari */
-    transition: width 2s;
-    margin-right: 1em;
-    margin-bottom: 1em;
-}
-
-.loginForm input:focus {
-    width: 100vw;
-    color: dimgrey;
-    border-bottom: 3px solid orange;
-}
-
-.loginForm input:valid {
-    width: 100vw;
-    color: dimgrey;
-    border-bottom: 3px solid lightgreen;
-}
-
-.emailInput input {
-    background-image: url("..//Images/at-solid.svg");
-}
-
-.passwordInput input {
-    background-image: url("..//Images/lock-solid.svg");
-}
-
-.loginForm input[type="submit"] {
-    border: none;
-    width: 10em;
-    margin: auto;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    margin-bottom: 1em;
-    box-shadow: 0 8px 18px 0 rgba(231,119,43,.3);
-    background-color: #e7772b;
-    color: white;
-    border-radius: 0.5em;
-}
-
-.loginForm input[value="Registeren"]{
-    box-shadow: 0 8px 18px 0 rgba(103,92,83,.3);
-    background-color:  #675c53;
-}
+    .loginForm label{
+        margin:1em;
+        margin-bottom: 0;
+    }
+    
+    .loginForm h3{
+        display: none;
+    }
+    .loginForm a:last-of-type{
+        display: none;
+    }
