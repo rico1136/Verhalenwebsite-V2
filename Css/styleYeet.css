@@ -509,22 +509,22 @@ footer img.show {
     opacity: 100;
 }
 
-footer img[alt="funny"] .show {
+footer img[alt="funny"].show {
     bottom: 85%;
     left: 25%;
 }
 
-footer img[alt="wow"] .show {
+footer img[alt="wow"].show {
     bottom: 105%;
     left: 42%;
 }
 
-footer img[alt="sad"] .show {
+footer img[alt="sad"].show {
     bottom: 85%;
     left: 60%;
 }
 
-footer img[alt="angry"] .show {
+footer img[alt="angry"].show {
     bottom: 10%;
     left: 65%;
 }
