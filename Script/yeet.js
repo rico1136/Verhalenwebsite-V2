@@ -26,7 +26,6 @@ function verrasMeVerhaal() {
     window.location = './verhaal.html';
 }
 
-verrasMe.addEventListener("click", verrasMeVerhaal);
 
 
 function showFilters() {
@@ -222,4 +221,5 @@ if (sPage == "verhaal.html") {
 if (sPage == "index.html" || sPage == "index2.html") {
     knop.addEventListener("click", showFilters);
     sterren.addEventListener("click", changeToGif);
+    verrasMe.addEventListener("click", verrasMeVerhaal);
 }
