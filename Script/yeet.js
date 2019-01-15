@@ -25,11 +25,6 @@ function showFilters() {
     filterForm.classList.toggle("show");
 }
 
-function hideSmileys() {
-    showSmileys();
-    smiley[4].classList.toggle("chosen");
-}
-
 function showSmileys() {
     smiley[0].classList.toggle("show");
     smiley[1].classList.toggle("show");
@@ -37,6 +32,13 @@ function showSmileys() {
     smiley[3].classList.toggle("show");
     smiley[4].classList.toggle("show");
 }
+
+function hideSmileys() {
+    showSmileys();
+    smiley[4].classList.toggle("chosen");
+}
+
+
 
 function changeToGif() {
     console.log("bleet?");
@@ -82,6 +84,7 @@ if (sPage == "verhaal.html") {
     window.addEventListener('scroll', function () {
         if (isElementInViewport(p1)) {
             if (p1.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p1.classList.toggle("showP");
@@ -91,6 +94,7 @@ if (sPage == "verhaal.html") {
 
         if (isElementInViewport(p2)) {
             if (p2.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p2.classList.toggle("showP");
@@ -100,6 +104,7 @@ if (sPage == "verhaal.html") {
 
         if (isElementInViewport(p3)) {
             if (p3.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p3.classList.toggle("showP");
@@ -109,6 +114,7 @@ if (sPage == "verhaal.html") {
 
         if (isElementInViewport(p4)) {
             if (p4.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p4.classList.toggle("showP");
@@ -117,6 +123,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p5)) {
             if (p5.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p5.classList.toggle("showP");
@@ -125,6 +132,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p6)) {
             if (p6.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p6.classList.toggle("showP");
@@ -133,6 +141,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p7)) {
             if (p7.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p7.classList.toggle("showP");
@@ -141,6 +150,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p8)) {
             if (p8.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p8.classList.toggle("showP");
@@ -149,6 +159,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p9)) {
             if (p9.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p9.classList.toggle("showP");
@@ -157,6 +168,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p10)) {
             if (p10.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p10.classList.toggle("showP");
@@ -165,6 +177,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p11)) {
             if (p11.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p11.classList.toggle("showP");
@@ -173,7 +186,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p12)) {
             if (p12.classList == "showP") {
-
+                console.log("nope");
             } else {
                 p12.classList.toggle("showP");
                 console.log(p1.classList);
@@ -181,6 +194,7 @@ if (sPage == "verhaal.html") {
         }
         if (isElementInViewport(p13)) {
             if (p13.classList == "showP") {
+                console.log("nope");
 
             } else {
                 p13.classList.toggle("showP");
@@ -196,19 +210,6 @@ if (sPage == "verhaal.html") {
 }
 
 if (sPage == "index.html") {
-    var rad = document.myForm.myRadios;
-    var prev = null;
-    for (var i = 0; i < rad.length; i++) {
-        rad[i].addEventListener('change', function () {
-            (prev) ? console.log(prev.value): null;
-            if (this !== prev) {
-                prev = this;
-            }
-            console.log(this.value);
-            document.getElementById("titel").innerHTML = this.id;
-            console.log(document.getElementById("titel").innerHTML);
-        });
-    }
     knop.addEventListener("click", showFilters);
     sterren.addEventListener("click", changeToGif);
 }
