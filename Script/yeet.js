@@ -42,7 +42,7 @@ function hideSmileys() {
 
 function changeToGif() {
     console.log("bleet?");
-    sterren.src = "Images/gif/ster-gif2.gif";
+    sterren.src = "images/gif/ster-gif2.gif";
     favorieten.innerHTML = "Favorieten (1)";
     console.log(favorieten.innerHTML);
 }
