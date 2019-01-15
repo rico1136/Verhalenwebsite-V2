@@ -312,7 +312,7 @@ main div:first-child {
     height: 20em;
     display: block;
     left: 5vw;
-} 
+}
 
 .textBox {
     display: block;
@@ -521,11 +521,11 @@ article p:first-of-type {
 }
 
 .loginForm article form input[type="email"] {
-    background-image: url("..//Images/at-solid.svg");
+    background-image: url("..//images/at-solid.svg");
 }
 
 .loginForm article form input[type="password"] {
-    background-image: url("..//Images/lock-solid.svg");
+    background-image: url("..//images/lock-solid.svg");
 }
 
 .loginForm input:focus {
