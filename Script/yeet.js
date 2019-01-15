@@ -40,6 +40,7 @@ function hideSmileys() {
 
 
 
+
 function changeToGif() {
     console.log("bleet?");
     sterren.src = "images/gif/ster-gif2.gif";
