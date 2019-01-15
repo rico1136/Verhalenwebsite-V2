@@ -210,7 +210,7 @@ if (sPage == "verhaal.html") {
 
 }
 
-if (sPage == "index.html") {
+if (sPage == "index.html" || sPage == "index.html") {
     knop.addEventListener("click", showFilters);
     sterren.addEventListener("click", changeToGif);
 }
