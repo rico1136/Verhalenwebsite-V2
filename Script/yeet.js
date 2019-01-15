@@ -6,6 +6,7 @@
 var knop = document.getElementById("filterBtn");
 var filterForm = document.getElementById("filterAll");
 var smileyKnop = document.getElementById("smileyBtn");
+var verrasMe = document.getElementById("verrasMe");
 
 var smiley = document.querySelectorAll(".smiley");
 
@@ -19,6 +20,13 @@ var sPath = window.location.pathname;
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
 
 console.log(sPath);
+
+
+function verrasMeVerhaal() {
+    window.location = './verhalen/ericLucassen.html';
+}
+
+verrasMe.addEventListener("click", verrasMeVerhaal);
 
 
 function showFilters() {
