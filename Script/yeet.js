@@ -66,6 +66,7 @@ function isElementInViewport(el) {
     );
 }
 
+//geent tijd om aan te passen
 var p1 = document.getElementById("p1");
 var p2 = document.getElementById("p2");
 var p3 = document.getElementById("p3");
@@ -210,7 +211,7 @@ if (sPage == "verhaal.html") {
 
 }
 
-if (sPage == "index.html" || sPage == "index.html") {
+if (sPage == "index.html" || sPage == "index2.html") {
     knop.addEventListener("click", showFilters);
     sterren.addEventListener("click", changeToGif);
 }
