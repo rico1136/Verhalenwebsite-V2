@@ -23,7 +23,7 @@ console.log(sPath);
 
 
 function verrasMeVerhaal() {
-    window.location = './verhalen/ericLucassen.html';
+    window.location = './verhalen/verhaal.html';
 }
 
 verrasMe.addEventListener("click", verrasMeVerhaal);
