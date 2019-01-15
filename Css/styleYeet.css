@@ -34,7 +34,7 @@ header a img {
     -ms-flex-item-align: center;
     align-self: center;
     width: 5em;
-    height: 3em;
+    height: 2.5em;
 }
 
 header a span {
@@ -76,6 +76,7 @@ header form input {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     margin-right: 1em;
+    height: 2.5em;
 }
 
 header form input:focus {
