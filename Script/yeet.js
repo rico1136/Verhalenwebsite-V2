@@ -9,6 +9,9 @@ var smileyKnop = document.getElementById("smileyBtn");
 
 var smiley = document.querySelectorAll(".smiley");
 
+var sterren = document.querySelector(".ster");
+var favorieten = document.querySelector(".Favorieten");
+console.log(favorieten);
 
 
 //https://stackoverflow.com/questions/8102940/javascript-check-what-page-has-loaded
@@ -33,6 +36,13 @@ function showSmileys() {
     smiley[2].classList.toggle("show");
     smiley[3].classList.toggle("show");
     smiley[4].classList.toggle("show");
+}
+
+function changeToGif() {
+    console.log("bleet?");
+    sterren.src = "Images/gif/ster-gif2.gif";
+    favorieten.innerHTML = "Favorieten (1)";
+    console.log(favorieten.innerHTML);
 }
 
 
@@ -69,7 +79,7 @@ var p13 = document.getElementById("p13");
 
 console.log(p1);
 if (sPage == "verhaal.html") {
-    window.addEventListener('scroll', function (event) {
+    window.addEventListener('scroll', function () {
         if (isElementInViewport(p1)) {
             if (p1.classList == "showP") {
 
@@ -199,6 +209,6 @@ if (sPage == "index.html") {
             console.log(document.getElementById("titel").innerHTML);
         });
     }
-
     knop.addEventListener("click", showFilters);
+    sterren.addEventListener("click", changeToGif);
 }

@@ -227,6 +227,8 @@ main div:first-child {
     margin-top: 8vh;
 }
 
+
+
 .secondSection div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -248,6 +250,18 @@ main div:first-child {
     height: 20em;
     display: block;
     left: 5vw;
+}
+
+.ster {
+    position: relative !important;
+    ;
+    width: 3em !important;
+    height: 3em !important;
+    border-radius: 0px !important;
+    margin-top: 1em;
+    margin-right: 2em;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .textBox {
@@ -487,6 +501,7 @@ footer button {
     margin: auto;
     position: relative;
     z-index: 2;
+
 }
 
 footer img {
@@ -531,7 +546,9 @@ footer img[alt="angry"].show {
 }
 
 footer img[alt="angry"].chosen {
-    left:40%;
+    margin: 0;
+
+    left: 40%;
     bottom: 10%;
     z-index: 3;
     opacity: 100;
@@ -540,11 +557,46 @@ footer img[alt="angry"].chosen {
 }
 
 footer img:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.4, 1.4);
+    transform: scale(1.4, 1.4);
 }
 
 @media only screen and (min-width: 510px) {
+    .ster {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    footer img {
+
+        left: 48%;
+    }
+
+    footer img[alt="angry"].chosen {
+        left: 45%;
+    }
+
+    footer img.show {
+        left: 30%;
+    }
+
+    footer img[alt="funny"].show {
+        left: 35%;
+    }
+
+    footer img[alt="wow"].show {
+        left: 44%;
+    }
+
+    footer img[alt="sad"].show {
+        left: 55%;
+    }
+
+    footer img[alt="angry"].show {
+        left: 60%;
+    }
+
+
     .loginForm article:last-of-type {
         border-top-right-radius: 0.5em;
         border-bottom-left-radius: 0em;
@@ -612,6 +664,11 @@ footer img:hover {
         box-shadow: 0 8px 18px 0 rgba(103, 92, 83, .3);
     }
 
+    .ster {
+        width: 1em;
+        height: 1em;
+    }
+
     .textVerhaal {
         display: block;
         overflow: hidden;
@@ -661,6 +718,42 @@ footer img:hover {
 }
 
 @media only screen and (min-width: 800px) {
+    .ster {
+        position: absolute !important;
+        width: 3em !important;
+        height: 3em !important;
+        border-radius: 0px !important;
+        right: 0 !important;
+        margin-bottom: 100em margin-right: 0;
+        ;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    footer img.show {
+        left: 35%;
+    }
+
+    footer img[alt="funny"].show {
+        left: 40%;
+    }
+
+    footer img[alt="wow"].show {
+        left: 47%;
+    }
+
+    footer img[alt="sad"].show {
+        left: 54%;
+    }
+
+    footer img[alt="angry"].show {
+        left: 58%;
+    }
+
+    footer img[alt="angry"].chosen {
+        left: 47%;
+    }
+
     .loginForm div:last-child {
         -ms-flex-item-align: center;
         align-self: center;
