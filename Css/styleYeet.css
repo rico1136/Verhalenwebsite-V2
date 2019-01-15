@@ -344,9 +344,12 @@ article div h3 {
     white-space: nowrap;
 }
 
-.textBox p:first-of-type {
+article p:first-of-type {
     display: block;
-    display: none;
+    position: absolute;
+    z-index: 100;
+    color: white;
+    padding-left: 2em;
 }
 
 .textBox a:first-of-type {
@@ -628,6 +631,9 @@ footer img:hover {
 }
 
 @media only screen and (min-width: 510px) {
+article p:first-of-type {
+    padding-left: 3em;
+}   
     .textBox img {
         display: inline-block !important;
         position: relative;
