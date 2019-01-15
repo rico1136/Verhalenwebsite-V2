@@ -631,9 +631,10 @@ footer img:hover {
 }
 
 @media only screen and (min-width: 510px) {
-article p:first-of-type {
-    padding-left: 3em;
-}   
+    article p:first-of-type {
+        padding-left: 3em;
+    }
+
     .textBox img {
         display: inline-block !important;
         position: relative;
