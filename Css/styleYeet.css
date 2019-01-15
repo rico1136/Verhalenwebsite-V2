@@ -55,9 +55,6 @@ header a span {
 h1 {
     text-align: center;
     font-size: 1.2em;
-    -webkit-box-flex: <0>;
-    -ms-flex-positive: <0>;
-    flex-grow: <0>;
     color: White;
     -ms-flex-item-align: center;
     align-self: center;
@@ -97,9 +94,6 @@ body header a img {
 body header h1 {
     color: white;
     font-size: 1em;
-    -webkit-box-flex: <2>;
-    -ms-flex-positive: <2>;
-    flex-grow: <2>;
     text-align: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -137,9 +131,6 @@ body header form input:focus {
     padding: 0;
     text-decoration: none;
     color: white;
-    -webkit-box-flex: <0>;
-    -ms-flex-positive: <0>;
-    flex-grow: <0>;
     -ms-flex-item-align: center;
     align-self: center;
     font-size: 1.5rem;
@@ -769,7 +760,6 @@ footer img:hover {
     #filterBtn {
         width: 40vw;
         margin-left: 3vw;
-        margin-right: none;
         margin-bottom: 0vh;
         padding-left: 0vw;
         padding-right: 0vw;
@@ -780,9 +770,6 @@ footer img:hover {
         border-bottom-right-radius: 5px;
         border-top-right-radius: 5px;
         text-align: center;
-        -webkit-transition: width 0.4s ease-in-out;
-        -webkit-transition: width 0.4s ease-in- out;
-        transition: width 0.4s ease-in- out;
     }
 
     #verrasMe {
