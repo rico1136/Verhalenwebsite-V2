@@ -8,6 +8,10 @@ var filterForm = document.getElementById("filterAll");
 var smileyKnop = document.getElementById("smileyBtn");
 var verrasMe = document.getElementById("verrasMe");
 
+var plusOne = document.querySelectorAll(".FadeIn");
+var plusOne2 = document.querySelectorAll(".FadeIn2");
+
+
 var smiley = document.querySelectorAll(".smiley");
 
 var sterren = document.querySelector(".ster");
@@ -51,8 +55,11 @@ function hideSmileys() {
 function changeToGif() {
     console.log("bleet?");
     sterren.src = "images/gif/ster-gif2.gif";
-    favorieten.innerHTML = "Favorieten (1)";
     console.log(favorieten.innerHTML);
+    console.log(plusOne);
+    console.log(plusOne2);
+    plusOne2[0].classList.toggle("fadeInRightBig");
+    plusOne[0].classList.toggle("fadeInRightBig");
 }
 
 
