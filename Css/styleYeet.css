@@ -312,7 +312,7 @@ main section form fieldset [type=checkbox]:checked + label::after {
 }
 
 main section form fieldset [type=radio]:checked + label::after {
-    background-color: darkorange;
+    background-color: rgb(252, 217, 0);
 }
 
 
