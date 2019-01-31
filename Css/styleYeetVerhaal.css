@@ -336,9 +336,9 @@ body header form input:focus {
     margin: auto;
     position: relative;
     z-index: 2;
-    
+
     -webkit-transition: all 1s;
-    
+
     transition: all 1s;
 }
 
